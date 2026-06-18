@@ -1,0 +1,37 @@
+{
+  "name": "@snapkitty/mcp-server",
+  "version": "1.0.0",
+  "description": "SnapKitty sovereign MCP server — WORM chain, agent builder, Ada contracts, digital twin bridge",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "snapkitty-mcp": "./index.mjs"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "keywords": [
+    "mcp",
+    "snapkitty",
+    "worm",
+    "sovereign",
+    "agent",
+    "ada",
+    "ollama",
+    "twin"
+  ],
+  "author": "SnapKitty Collective <collective@snapkitty.ai>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SNAPKITTYWEST/snapkitty-mcp.git"
+  },
+  "homepage": "https://collectivekitty.com",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,5 @@
+test.mjs
+.worm*.json
+.env*
+*.mov
+*.mp4
