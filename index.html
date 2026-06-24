@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SnapKitty MCP — Sovereign AI Tools for Claude and Cursor</title>
+<meta name="description" content="5 sovereign MCP tools: worm_seal, worm_read, agent_build, ada_contract_generate, twin_chat, sovereign_inject. Drop into Claude Desktop in 2 minutes."/>
+<meta name="theme-color" content="#00ff88"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#04040a;--bg1:#080810;--bg2:#0a0a12;--border:#1a1a28;--text:#e0e0f0;--dim:#555;--green:#00ff88;--purple:#bf5af2;--blue:#0a84ff;--mono:'SF Mono',Monaco,Consolas,monospace}
+html,body{min-height:100%;background:var(--bg);color:var(--text);font-family:var(--mono)}
+a{color:inherit;text-decoration:none}
+.hero{max-width:920px;margin:0 auto;padding:80px 24px 60px;text-align:center}
+.mark{display:inline-flex;align-items:center;gap:8px;font-size:9px;letter-spacing:3px;color:var(--green);border:1px solid #1a2e1a;border-radius:4px;padding:4px 12px;margin-bottom:32px}
+h1{font-size:clamp(26px,5vw,48px);font-weight:700;line-height:1.15;margin-bottom:18px}
+h1 span{color:var(--green)}
+.sub{font-size:15px;color:#666;line-height:1.7;max-width:540px;margin:0 auto 40px}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{padding:12px 28px;background:var(--green);color:#000;border-radius:8px;font-weight:700;font-size:13px;font-family:var(--mono)}
+.btn-ghost{padding:12px 28px;border:1px solid #1e1e2e;color:#888;border-radius:8px;font-size:13px;font-family:var(--mono)}
+.install{max-width:640px;margin:0 auto 64px;background:var(--bg1);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.install-header{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 16px;font-size:9px;letter-spacing:2px;color:var(--green)}
+.install-body{padding:16px 20px}
+.step{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+.step-num{font-size:9px;color:var(--dim);width:16px;flex-shrink:0;padding-top:2px}
+.step-content{}
+.step-label{font-size:11px;color:var(--text);margin-bottom:4px}
+.step-code{font-size:10px;color:var(--green);background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:6px 10px;display:inline-block;cursor:pointer}
+.tools{max-width:920px;margin:0 auto;padding:0 24px 80px}
+.section-label{font-size:9px;letter-spacing:3px;color:var(--dim);margin-bottom:24px;text-align:center}
+.tool-row{background:var(--bg1);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:10px;display:flex;align-items:flex-start;gap:14px}
+.tool-name{font-size:12px;color:var(--green);width:200px;flex-shrink:0}
+.tool-desc{font-size:11px;color:#555;line-height:1.5}
+.tool-badge{margin-left:auto;font-size:9px;padding:2px 8px;border-radius:3px;flex-shrink:0;background:#00ff8815;color:#00ff88;border:1px solid #00ff8825}
+.config{max-width:640px;margin:0 auto 60px;background:var(--bg1);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.config-header{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 16px;font-size:9px;letter-spacing:2px;color:#555}
+.config-body{padding:16px 20px}
+pre{font-size:10px;color:var(--green);line-height:1.8;overflow-x:auto}
+footer{border-top:1px solid var(--border);padding:20px 24px;text-align:center;font-size:10px;color:var(--dim)}
+footer a{color:var(--green)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="mark">SNAPKITTY SOVEREIGN OS - BUILD LANE - MCP</div>
+  <h1>Sovereign AI tools<br><span>for Claude and Cursor.</span></h1>
+  <p class="sub">5 MCP tools that give your AI assistant direct access to the SnapKitty sovereign stack: WORM sealing, agent builds, Ada contracts, twin chat, and context injection. Drop into Claude Desktop in 2 minutes.</p>
+  <div class="ctas">
+    <a class="btn-primary" href="https://github.com/SNAPKITTYWEST/snapkitty-mcp" target="_blank">View on GitHub</a>
+    <a class="btn-ghost" href="https://www.npmjs.com/package/snapkitty-mcp" target="_blank">npm package</a>
+  </div>
+</div>
+<div class="install">
+  <div class="install-header">QUICK INSTALL - 2 STEPS</div>
+  <div class="install-body">
+    <div class="step">
+      <span class="step-num">1</span>
+      <div class="step-content">
+        <div class="step-label">Install the package</div>
+        <div class="step-code">npm install -g snapkitty-mcp</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">2</span>
+      <div class="step-content">
+        <div class="step-label">Add to Claude Desktop config (claude_desktop_config.json)</div>
+        <div class="step-code">{ "mcpServers": { "snapkitty": { "command": "snapkitty-mcp" } } }</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">3</span>
+      <div class="step-content">
+        <div class="step-label">Restart Claude Desktop. All 5 tools appear in the tool palette.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tools">
+  <p class="section-label">SOVEREIGN TOOLS</p>
+  <div class="tool-row"><span class="tool-name">worm_seal</span><span class="tool-desc">Seal a payload onto the WORM chain. SHA-256 hash, Ed25519 signature, timestamp. Returns the block receipt.</span><span class="tool-badge">chain</span></div>
+  <div class="tool-row"><span class="tool-name">worm_read</span><span class="tool-desc">Read the WORM chain tail. Returns the last N sealed blocks with hashes and signatures.</span><span class="tool-badge">chain</span></div>
+  <div class="tool-row"><span class="tool-name">agent_build</span><span class="tool-desc">Scaffold a new sovereign agent with role profile, soul spec, and trust deed template.</span><span class="tool-badge">agents</span></div>
+  <div class="tool-row"><span class="tool-name">ada_contract_generate</span><span class="tool-desc">Generate an Ada 2022 contract spec for a given agent. Preconditions, postconditions, invariants.</span><span class="tool-badge">formal</span></div>
+  <div class="tool-row"><span class="tool-name">twin_chat</span><span class="tool-desc">Chat with a digital twin agent using the sovereign prompt envelope. EDAULC trust score applied.</span><span class="tool-badge">agents</span></div>
+  <div class="tool-row"><span class="tool-name">sovereign_inject</span><span class="tool-desc">Inject sovereign context into any agent session. Borrow chain, kernel state, trust registry.</span><span class="tool-badge">kernel</span></div>
+</div>
+<div class="config">
+  <div class="config-header">FULL CONFIG EXAMPLE</div>
+  <div class="config-body">
+<pre>{
+  "mcpServers": {
+    "snapkitty": {
+      "command": "snapkitty-mcp",
+      "env": {
+        "SOVEREIGN_MESH": "https://sovereign-mesh.snapkittywest.workers.dev",
+        "WORM_CHAIN":     "./chain.jsonl"
+      }
+    }
+  }
+}</pre>
+  </div>
+</div>
+<footer>
+  Built by <a href="https://collectivekitty.com" target="_blank">SnapKitty Sovereign OS</a>
+  <a href="https://github.com/SNAPKITTYWEST/snapkitty-mcp" target="_blank">GitHub</a>
+  MIT License
+</footer>
+</body>
+</html>
