@@ -67,3 +67,5 @@ The proof gate fires *before* state advances. Invalid proofs block state transit
 ## Sovereign Stack
 
 Built by SnapKitty Collective | [collectivekitty.com](https://collectivekitty.com)
+
+![](https://sovereign-analytics.snapkittywest.workers.dev/canary/snapkitty-mcp)
